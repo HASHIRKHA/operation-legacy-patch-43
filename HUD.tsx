@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { Stats, InventoryItem, LoadoutType } from '../types';
-import { CALLSIGN, UNIT, OPERATOR_NAME } from '../constants';
+import { Stats, InventoryItem, LoadoutType } from './types';
+import { CALLSIGN, UNIT, OPERATOR_NAME } from './constants';
 
 interface HUDProps {
   stats: Stats;
