@@ -2,8 +2,9 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { GameState, Stats, InventoryItem, LoadoutType, Level } from './types';
 import { LOADOUT_CONFIGS, MISSIONS, OPERATOR_NAME, CALLSIGN, UNIT } from './constants';
-import HUD from './components/HUD';
-import { getDynamicBriefing } from './services/geminiService';
+imimport HUD from './HUD';
+
+import { getDynamicBriefing } from './geminiService';
 
 const App: React.FC = () => {
   const [gameState, setGameState] = useState<GameState>(GameState.START);
